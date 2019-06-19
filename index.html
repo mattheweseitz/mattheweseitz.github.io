@@ -14,9 +14,12 @@
 
 <h1>Calvinisms</h1>
 
-<button onclick="snd.ply()">Click me!</button>
-<script>var snd = new audio("https://raw.githubusercontent.com/mattheweseitz/mattheweseitz.github.io/master/Media/audio/what-a-treasure.mp3")</script>
-</body>
+<section id="main">
+						<audio id="treasure" src="media/audio/what-a-treasure.mp3" preload="auto"></audio>
+
+						<a href="#" class="button" onclick="document.getElementById('treasure').play();">What a Treasure</a>
+
+</section>
 
 
 </html>
