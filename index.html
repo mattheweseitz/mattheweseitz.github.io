@@ -6,35 +6,40 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="stylesheet.css">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 
 	</head>
 
 
 <body>
 
-<script>
-var backgroundImg=['https://raw.githubusercontent.com/mattheweseitz/mattheweseitz.github.io/master/Media/Calvin-J-Carr.jpg','https://raw.githubusercontent.com/mattheweseitz/mattheweseitz.github.io/master/Media/Calvin-o-Carr.jpg'];
-var backgroundCount = 0;
 
-$(function supriseMe() {
-  $('body').css('background-image', 'url(' + backgroundImg[backgroundCount] + ')'); //allows a variable for changing background img based in an array, change number in [] to change background...
-});
+<h1>CALVINISMS</h1>
+<h2 style="padding-bottom: 50px;">Wisdom for our age</h2>
 
-$('#onClick').on('click', function supriseMe(){
-  backgroundCount++;
-  if (backgroundCount > backgroundImg.length - 1) backgroundCount = 0;
-  $('body').css('background-image', 'url(' + backgroundImg[backgroundCount] + ')');
-});
-</script>
+<div class="calvin-grid-container">
 
-<h1>Calvinisms</h1>
-
-<div id="audio-blocks">
+	<div class="calvin-grid-item"
 						<audio id="treasure" src="https://raw.githubusercontent.com/mattheweseitz/mattheweseitz.github.io/master/Media/audio/what-a-treasure.mp3" preload="auto"></audio>
-
 						<button class = "button" onclick="document.getElementById('treasure').play();">What a Treasure</button>
+					</div>
 
-						<button class = "button" onclick="supriseMe()">Suprise Me</button>
+					<div class="calvin-grid-item"
+										<audio id="treasure" src="https://raw.githubusercontent.com/mattheweseitz/mattheweseitz.github.io/master/Media/audio/what-a-treasure.mp3" preload="auto"></audio>
+										<button class = "button" onclick="document.getElementById('treasure').play();">What a Treasure</button>
+									</div>
+
+									<div class="calvin-grid-item"
+														<audio id="treasure" src="https://raw.githubusercontent.com/mattheweseitz/mattheweseitz.github.io/master/Media/audio/what-a-treasure.mp3" preload="auto"></audio>
+														<button class = "button" onclick="document.getElementById('treasure').play();">What a Treasure</button>
+													</div>
+
+													<div class="calvin-grid-item"
+																		<audio id="treasure" src="https://raw.githubusercontent.com/mattheweseitz/mattheweseitz.github.io/master/Media/audio/what-a-treasure.mp3" preload="auto"></audio>
+																		<button class = "button" onclick="document.getElementById('treasure').play();">What a Treasure</button>
+																	</div>
+
+
 
 </div>
 
