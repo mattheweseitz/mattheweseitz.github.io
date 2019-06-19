@@ -30,7 +30,7 @@ padding-left: 5%;
 
 .button:hover {
   background-color: green;
- color: green;
+ color: white;
  padding: 12px;
  text-align: center;
  text-decoration: none;
@@ -53,6 +53,10 @@ padding-left: 5%;
 
 }
 
-.special-button:hover ~ .body {
+.special-button:onclick ~ body {
   background-image: url(https://raw.githubusercontent.com/mattheweseitz/mattheweseitz.github.io/master/Media/Calvin-o-Carr.jpg);
+  background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
 }
