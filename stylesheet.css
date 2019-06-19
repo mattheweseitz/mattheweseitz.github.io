@@ -29,7 +29,7 @@ padding-left: 5%;
 }
 
 .button:hover {
-  background-color: transparent;
+  background-color: green;
  color: green;
  padding: 12px;
  text-align: center;
@@ -38,4 +38,21 @@ padding-left: 5%;
  font-size: 26px;
  margin-left: 5%;
  border: solid;
+}
+
+.special-button {
+  background-color: transparent;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 26px;
+  margin-left: 5%;
+  border: solid;
+
+}
+
+.special-button:hover ~ .body {
+  background-image: url(https://raw.githubusercontent.com/mattheweseitz/mattheweseitz.github.io/master/Media/Calvin-o-Carr.jpg);
 }
