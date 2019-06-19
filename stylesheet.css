@@ -15,3 +15,11 @@ font-size: 250%;
 color: white;
 padding-left: 5%;
 }
+
+button
+{
+padding-left: 5%;
+color: white;
+outline-color: white;
+
+}
