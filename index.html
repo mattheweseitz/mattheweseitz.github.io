@@ -12,6 +12,21 @@
 
 <body>
 
+<script>
+var backgroundImg=['https://raw.githubusercontent.com/mattheweseitz/mattheweseitz.github.io/master/Media/Calvin-J-Carr.jpg','https://raw.githubusercontent.com/mattheweseitz/mattheweseitz.github.io/master/Media/Calvin-o-Carr.jpg'];
+var backgroundCount = 0;
+
+$(function supriseMe() {
+  $('body').css('background-image', 'url(' + backgroundImg[backgroundCount] + ')'); //allows a variable for changing background img based in an array, change number in [] to change background...
+});
+
+$('#onClick').on('click', function supriseMe(){
+  backgroundCount++;
+  if (backgroundCount > backgroundImg.length - 1) backgroundCount = 0;
+  $('body').css('background-image', 'url(' + backgroundImg[backgroundCount] + ')');
+});
+</script>
+
 <h1>Calvinisms</h1>
 
 <div id="audio-blocks">
@@ -19,7 +34,7 @@
 
 						<button class = "button" onclick="document.getElementById('treasure').play();">What a Treasure</button>
 
-						<button class = "special-button">Test Special Button</button>
+						<button class = "button" onclick="supriseMe()"</button>
 
 </div>
 
