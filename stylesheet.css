@@ -51,14 +51,3 @@ h2
  margin-left: 5%;
  border: solid;
 }
-
-.calvin-grid-container {
-  display: inline-grid;
-  grid-template-columns: auto auto;
-  padding: 30px;
-}
-
-.calvin-grid-item {
-  /*text-align: left;*/
-  padding: 10px;
-}

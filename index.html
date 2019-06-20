@@ -11,28 +11,44 @@
 	</head>
 
 
-<body>
+	<body>
 
 
-<h1>CALVINISMS</h1>
-<h2 style="padding-bottom: 50px;">Wisdom for our age</h2>
-
-
-
-			<audio id="treasure" src="https://raw.githubusercontent.com/mattheweseitz/mattheweseitz.github.io/master/Media/audio/what-a-treasure.mp3" preload="auto"></audio>
-			<button class = "button" onclick="document.getElementById('treasure').play();">What a Treasure</button>
-
-			<audio id="bow" src="https://raw.githubusercontent.com/mattheweseitz/mattheweseitz.github.io/master/Media/audio/bow-your-heads.mp3" preload="auto"></audio>
-			<button class = "button" onclick="document.getElementById('bow').play();">Bow Your Heads</button>
-
-			<audio id="free" src="https://raw.githubusercontent.com/mattheweseitz/mattheweseitz.github.io/master/Media/audio/were-free.mp3" preload="auto"></audio>
-			<button class = "button" onclick="document.getElementById('free').play();">We're Freeee!</button>
-
-			<audio id="amen" src="https://raw.githubusercontent.com/mattheweseitz/mattheweseitz.github.io/master/Media/audio/well-amen.mp3" preload="auto"></audio>
-			<button class = "button" onclick="document.getElementById('amen').play();">Well Amen</button>
+		<h1>CALVINISMS</h1>
+		<h2 style="padding-bottom: 50px;">Wisdom for our age</h2>
 
 
 
+		<audio id="treasure" src="https://raw.githubusercontent.com/mattheweseitz/mattheweseitz.github.io/master/Media/audio/what-a-treasure.mp3" preload="auto"></audio>
+		<button class = "button" onclick="document.getElementById('treasure').play();">What a Treasure</button>
 
+		<audio id="bow" src="https://raw.githubusercontent.com/mattheweseitz/mattheweseitz.github.io/master/Media/audio/bow-your-heads.mp3" preload="auto"></audio>
+		<button class = "button" onclick="document.getElementById('bow').play();">Bow Your Heads</button>
+
+		<audio id="free" src="https://raw.githubusercontent.com/mattheweseitz/mattheweseitz.github.io/master/Media/audio/were-free.mp3" preload="auto"></audio>
+		<button class = "button" onclick="document.getElementById('free').play();">We're Freeee!</button>
+
+		<audio id="amen" src="https://raw.githubusercontent.com/mattheweseitz/mattheweseitz.github.io/master/Media/audio/well-amen.mp3" preload="auto"></audio>
+		<button class = "button" onclick="document.getElementById('amen').play();">Well Amen</button>
+
+		<button class = "button" onclick="changeBackground()">SURPRISE!</button>
+
+	</body>
+
+	<script type="text/javascript">
+		const backgrounds = [
+			"https://raw.githubusercontent.com/mattheweseitz/mattheweseitz.github.io/master/Media/Calvin-J-Carr.jpg",
+			"https://raw.githubusercontent.com/mattheweseitz/mattheweseitz.github.io/master/Media/Calvin-o-Carr.jpg"
+		];
+		let backgroundNumber = 0;
+		const changeBackground = () => {
+			backgroundNumber++;
+			document.body.style.backgroundImage = `url(${backgrounds[backgroundNumber % backgrounds.length]})`;
+			
+		};
+
+
+
+	</script>
 
 </html>
