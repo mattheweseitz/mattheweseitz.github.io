@@ -31,6 +31,9 @@
 		<audio id="amen" src="https://raw.githubusercontent.com/mattheweseitz/mattheweseitz.github.io/master/Media/audio/well-amen.mp3" preload="auto"></audio>
 		<button class = "button" onclick="document.getElementById('amen').play();">Well Amen</button>
 
+		<audio id="singalong" src="https://raw.githubusercontent.com/mattheweseitz/mattheweseitz.github.io/master/Media/audio/Singalong.m4r" preload="auto"></audio>
+		<button class = "button" onclick="document.getElementById('singalong').play();">Well Amen</button>
+
 		<button class = "button" onclick="changeBackground()">SURPRISE!</button>
 
 	</body>
@@ -44,7 +47,7 @@
 		const changeBackground = () => {
 			backgroundNumber++;
 			document.body.style.backgroundImage = `url(${backgrounds[backgroundNumber % backgrounds.length]})`;
-			
+
 		};
 
 
